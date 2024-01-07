@@ -2,6 +2,9 @@ module SumOfMultiples (
     sumOfMultiples,
     multiplesOfFactor) where
 
+import qualified Data.Set as Set
+import Data.Set (fromList, toList, union)
+
 multiplesOfFactor :: Integer -> Integer ->[Integer]
 multiplesOfFactor factor limit 
     | factor < 0  = []
